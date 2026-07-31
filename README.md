@@ -1,75 +1,68 @@
-# Nuxt Minimal Starter
+# ETEC Frontend
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Frontend for ETEC, built with [Nuxt 4](https://nuxt.com).
 
-## Setup
+## Requirements
 
-Make sure to install dependencies:
+- Node.js 20+
+- npm
+
+## Getting Started
 
 ```bash
-# npm
+git clone https://github.com/knr-smey/etec-frontend.git
+cd etec-frontend
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the dev server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
+```
 
-# pnpm
-pnpm dev
+## Project Structure
 
-# yarn
-yarn dev
+This project uses Nuxt 4's directory conventions:
 
-# bun
-bun run dev
+```
+app/
+  assets/       # CSS, images
+  components/   # Vue components
+  composables/  # Reusable composition-API logic
+  layouts/      # Page layouts
+  middleware/   # Route middleware
+  pages/        # File-based routes
+  plugins/      # Nuxt plugins
+  utils/        # Client/app-side utility functions
+  app.vue       # Root component
+
+server/
+  api/          # API routes (Nitro)
+  middleware/   # Server middleware
+  utils/        # Server-side utility functions
+
+shared/
+  types/        # Types shared between app and server
+  utils/        # Utilities shared between app and server
+
+public/         # Static files served as-is
 ```
 
 ## Production
 
-Build the application for production:
+Build for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Preview the production build locally:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+See the [Nuxt deployment docs](https://nuxt.com/docs/getting-started/deployment) for more.
